@@ -1,4 +1,5 @@
-premierement il est recommandee d'utiliser python 3.11 car la derniere version de python n'est pas encore supportee par la librairie sentencepiece
+il est recommandé d'utiliser python 3.11 car la dernière version de python n'est pas encore supportée par la librairie sentencepiece
+prevoir au minimum 2 Go d'espace libre
 
 ```bash
 #installer les librairies necesssaire:
@@ -6,6 +7,7 @@ premierement il est recommandee d'utiliser python 3.11 car la derniere version d
 pip install -r requirements.txt
 
 #executer le programme:
+python src/translator.py
 
 python src/main.py
 
