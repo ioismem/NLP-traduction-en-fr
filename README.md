@@ -1,4 +1,4 @@
-## Current Version: 1.1
+## Current Version: 0.2
 - Ajout de la traduction française vers anglaise
 
 il est recommandé d'utiliser python 3.11 car la dernière version de python n'est pas encore supportée par la librairie sentencepiece
