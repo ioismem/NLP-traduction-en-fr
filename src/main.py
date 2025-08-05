@@ -3,20 +3,6 @@ from translator import DualTranslator
 def main():
     translator = DualTranslator()
     state = True
- #   while True:
-  #      choice = input("choose 1/to translate english to french 2/to translate french to english or 3/ to quit: ")
-   #     if choice.lower() == '3':
-    #        break
-     #   elif choice.lower() =="1":
-      #      text = input("input english text to translate to french: ")
-       #     french = translator.en_to_fr(text)
-   #         print(f"→ French: {french}")
-  #          choice = input("choose 1/to translate english to french 2/to translate french to english or 3/ to quit: ")
-     #   elif choice.lower() =="2":
-    #        text = input("input english text to translate to french: ")
-      #      english = translator.fr_to_en(text)
-       #     print(f"→ English: {english}")
-        #    choice = input("choose 1/to translate english to french 2/to translate french to english or 3/ to quit: ")
     while True:
         choice = input("choose 1/to translate english to french 2/to translate french to english or 3/ to quit: ")
         if choice == "1":

@@ -1,3 +1,6 @@
+## Current Version: 1.1
+- Ajout de la traduction française vers anglaise
+
 il est recommandé d'utiliser python 3.11 car la dernière version de python n'est pas encore supportée par la librairie sentencepiece
 prevoir au minimum 2 Go d'espace libre
 
