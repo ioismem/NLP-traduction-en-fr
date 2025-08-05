@@ -13,13 +13,23 @@ class DualTranslator:
         self.fr_en_model = MarianMTModel.from_pretrained(self.fr_en_model_name)
 
     def en_to_fr(self, text: str) -> str:
-        tokens = self.en_fr_tokenizer.prepare_seq2seq_batch([text], return_tensors="pt", truncation=True)
+        tokens = self.en_fr_tokenizer(
+            text,
+            return_tensors="pt",
+            padding=True,
+            truncation=True
+        )
         with torch.no_grad():
             translated = self.en_fr_model.generate(**tokens)
         return self.en_fr_tokenizer.decode(translated[0], skip_special_tokens=True)
 
     def fr_to_en(self, text: str) -> str:
-        tokens = self.fr_en_tokenizer.prepare_seq2seq_batch([text], return_tensors="pt", truncation=True)
+        tokens = self.fr_en_tokenizer(
+            text,
+            return_tensors="pt",
+            padding=True,
+            truncation=True
+        )
         with torch.no_grad():
             translated = self.fr_en_model.generate(**tokens)
         return self.fr_en_tokenizer.decode(translated[0], skip_special_tokens=True)
